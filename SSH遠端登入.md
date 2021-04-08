@@ -108,6 +108,7 @@ $ ssh-copy-id username@host -p 22
 傳送成功後，
 會在Server端的~/.ssh/建立一個authorized_keys
 裡面紀錄Client端的公鑰、username@hostname
+
 ![authorized_keys](https://i.imgur.com/jSVC0yI.png)
 
 
@@ -115,4 +116,5 @@ $ ssh-copy-id username@host -p 22
 ---
 **測試結果**
 最後只要登入時，不用密碼就可以登入了。
+
 ![login without passwd](https://i.imgur.com/vbEjnLU.png)
