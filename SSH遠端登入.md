@@ -39,11 +39,15 @@ yes後，會在家目錄中新增一個.ssh/known_hosts 檔
 裡面記錄下載的公鑰
 
 原本沒有 .ssh/
+
 ![沒'.ssh/'](https://i.imgur.com/3tYg17R.png)
 
 同意後
+
 ![有'.ssh/'](https://i.imgur.com/VnhFyEg.png)
+
 known_hosts檔內存放下載好的公鑰
+
 ![known_hosts](https://i.imgur.com/ga7QFdT.png)
 
 
@@ -78,6 +82,7 @@ $ ssh-keygen -t rsa -P ''
 ```
 -P要大寫
 後面是兩個單引號''，中間不能有空格
+
 ![RSA](https://i.imgur.com/hlwKb3U.png)
 
 
@@ -85,6 +90,7 @@ $ ssh-keygen -t rsa -P ''
 會建立以下檔案
 id_dsa        -->私鑰
 id_dsa.pub    -->公鑰
+
 ![公、私鑰](https://i.imgur.com/Lob5j3s.png)
 
 
@@ -95,12 +101,14 @@ $ ssh-copy-id username@host -p 22
 ```
 -p    port號
 (port可不打，預設為22)
+
 ![傳公鑰](https://i.imgur.com/xVrgmP7.png)
 
 
 傳送成功後，
 會在Server端的~/.ssh/建立一個authorized_keys
 裡面紀錄Client端的公鑰、username@hostname
+
 ![authorized_keys](https://i.imgur.com/jSVC0yI.png)
 
 
@@ -108,4 +116,5 @@ $ ssh-copy-id username@host -p 22
 ---
 **測試結果**
 最後只要登入時，不用密碼就可以登入了。
+
 ![login without passwd](https://i.imgur.com/vbEjnLU.png)
