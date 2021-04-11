@@ -31,8 +31,12 @@ gw ->gateway
 **永久修改Routing Table**
 建立此檔案，永久修改Routing Table。
 ![](https://i.imgur.com/9mR700F.png)
+
 OR
+
 ![](https://i.imgur.com/R7AQv8r.png)
+
+*上為一次key很多不同ip，下為只固定一台
 
 記得chmod +x
 
