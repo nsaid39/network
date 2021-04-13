@@ -12,10 +12,7 @@
 ```
 net.ipv4.ip_forward = 1
 ```
-輸入以下指令，套用上面設定才能生效：
-```
-$ sysctl -p
-```
+
 
 ---
 # **新增Routing Table**
@@ -30,6 +27,9 @@ gw ->gateway
 
 **永久修改Routing Table**
 建立此檔案，永久修改Routing Table。
+
+!!!!!!!!要記得安裝bash!!!!!!!!
+
 ![](https://i.imgur.com/9mR700F.png)
 
 OR
@@ -51,3 +51,5 @@ sudo reboot
 ```
 
 原理：每次重開機的時候，系統都會執行此檔案
+
+###### tags: `TCP/IP` `Router`
