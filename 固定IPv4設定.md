@@ -1,5 +1,8 @@
 # 固定IPv4設定
-
+先看網卡的名稱
+```
+$ ifconfig -a
+```
 ## Alpine
 ```
 $ sudo nano /etc/network/interfaces
@@ -23,3 +26,7 @@ $ sudo netplan try
 ```
 $ sudo netplan apply
 ```
+
+
+
+###### tags: `TCP/IP`
