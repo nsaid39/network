@@ -58,7 +58,7 @@ sudo reboot
 原理：每次重開機的時候，系統都會執行此檔案
 
 ### 2.Ubuntu Server
-在 /etc/ 新增rc.local 的檔案
+在 /etc/ 新增rc.local 的檔案  
 ![](https://i.imgur.com/RwqpPnt.png)
 ```
 $ sudo chmod +x /etc/rc.local
