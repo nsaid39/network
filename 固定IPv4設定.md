@@ -8,6 +8,10 @@ $ ifconfig -a
 $ sudo nano /etc/network/interfaces
 ```
 ![](https://i.imgur.com/5THJYH5.jpg)  
+
+```
+$ sudo service networking restart
+```
 ```
 reboot
 ```
@@ -18,6 +22,9 @@ $ sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
 ![](https://i.imgur.com/zwUMiac.jpg)  
+
+![](https://i.imgur.com/u146EKA.jpg)
+
 ```
 $ sudo netplan try
 ```
